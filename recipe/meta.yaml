@@ -1,5 +1,5 @@
 {% set name = "hpfrec" %}
-{% set version = "0.2.14" %}
+{% set version = "0.2.14.post1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hpfrec-{{ version }}.tar.gz
-  sha256: 53ce6cb89517cd0ab822ea888a8bb9f07b5a5be46ea0df09c7f51ebc709940fb
+  sha256: 05fa55aecb9358181209932f50948c1d2307ebae583493481df4f673980ca90b
 
 build:
   skip: true  # [py<310 or win]
