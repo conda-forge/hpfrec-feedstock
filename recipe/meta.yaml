@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hpfrec-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/hpfrec-{{ version }}.tar.gz
   sha256: 05fa55aecb9358181209932f50948c1d2307ebae583493481df4f673980ca90b
 
 build:
   skip: true  # [py<310 or win]
-  number: 1
+  number: 2
 
 requirements:
   build:
